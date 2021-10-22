@@ -823,10 +823,10 @@ table.tabla-vertical tbody tr > th {
   );
   padding: 5px 7px;
 }
-.ico-naranja {
+.ico-turquesa {
   color: white !important;
   font-weight: 900;
-  background: #ffa332;
+  background: #2ba7a8;
   padding: 5px 7px;
 }
 
@@ -934,4 +934,10 @@ table.tabla-vertical tbody tr > th {
 }
 .multiply {
   mix-blend-mode: multiply;
+}
+.verde {
+  color: #56a51d;
+}
+.turquesa {
+  color: #2ba7a8;
 }
