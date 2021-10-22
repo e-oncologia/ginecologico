@@ -1,0 +1,430 @@
+/*.navbar-fixed-bottom, .navbar-fixed-top{z-index: 1110;}*/
+
+
+/*Pila*/
+
+.navbar-default .navbar-toggle .icon-bar {
+    background: #fff;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: #fff;
+}
+
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus
+ {
+    background-color: #ee7011;
+}
+
+.navbar-default {
+    border-color: #E7E7E7;
+    border-radius: 0px;
+    border: none;
+    border-bottom: 1px solid #56a51d
+}
+
+.navbar-nav {
+    margin: 0px -15px;
+}
+
+.dropdown-menu {
+    min-width: 0px;
+    overflow-y: auto;
+    padding: 0px
+}
+
+.navbar-right {
+    margin-right: -15px;
+}
+
+.nav li.dropdown:first-child {
+    margin-left: 0px;
+}
+
+@media only screen and (min-width: 768px) {
+    .dropdown-menu {
+        border-radius: 0px;
+        min-width: 380px
+    }
+    .navbar-right .dropdown-menu {
+        min-width: 245px
+    }
+    .nav li.dropdown:first-child {
+        margin-left: -15px;
+        min-width: 130px
+    }
+}
+
+.dropdown-menu > li > a {
+    white-space: normal
+}
+
+
+/*.subdropdown{display: none}*/
+
+.navbar-default {
+    background: rgb(86, 165, 29);
+  background: linear-gradient(
+    90deg,
+    rgba(86, 165, 29, 1) 35%,
+    rgba(110, 194, 50, 1) 100%
+  );
+}
+
+.navbar-nav a {
+    text-decoration: none
+}
+
+.navbar-nav ul {
+    list-style: none;
+}
+
+.navbar-nav > li > .dropdown-menu li {
+    font-size: 16px;
+}
+
+.subdropdown li a {
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-right: 20px;
+    display: block;
+}
+
+.navbar-nav a,
+.navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+
+/*Colores*/
+
+.dropdown-menu > li > a:focus,
+.dropdown-menu > li > a:hover {
+    background: #E8E8E8
+}
+
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:focus,
+.navbar-default .navbar-nav > .open > a:hover {
+   background: transparent;
+}
+
+.navbar-nav a,
+.navbar-default .navbar-nav .open .dropdown-menu > li > a,
+.navbar-default .navbar-nav .open .dropdown-menu > li > a:focus,
+.navbar-default .navbar-nav .open .dropdown-menu > li > a:hover {}
+
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:focus,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > li > a,
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus;
+{
+    color: #666666;
+}
+
+.dropdown-menu > li > a,
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus {
+    color: #E8E8E8;
+}
+
+.navbar-nav li.dropdown2 a,
+.navbar-default .navbar-nav .open .dropdown-menu > li > a,
+.navbar-default .navbar-nav .open .dropdown-menu > li > a:focus,
+.navbar-default .navbar-nav .open .dropdown-menu > li > a:hover {
+    color: #666666;
+}
+
+
+/*Colores con elemento visto*/
+
+.navbar-default .navbar-nav .open .dropdown-menu > li.visto > a {
+    color: #FFA332;
+}
+
+.subdropdown > li.visto > a {
+    color: #FFA332;
+}
+
+
+/*Zona izquierda*/
+
+.navbar-default .navbar-nav.navbar-right .open .dropdown-menu > li > a,
+.navbar-default .navbar-nav.navbar-right .open .dropdown-menu > li > a:focus,
+.navbar-default .navbar-nav.navbar-right .open .dropdown-menu > li > a:hover {
+    color: #FFA332;
+}
+
+
+/*Iconos cabecera*/
+
+.navbar-default .navbar-nav > .dropdown >a {
+    color: white;
+    width: 100%;
+}
+
+.navbar-default .navbar-nav > .dropdown >a:hover {
+    color: white;
+}
+
+.navbar-default .navbar-nav > .dropdown >a:focus {
+    color: white;
+}
+
+
+/*icono*/
+
+.nav .caret {
+    width: 15px;
+    height: 9px;
+    background: url("../imagenes/comunes/lista-cabecera-azul-on.png") repeat scroll 0% 0% transparent;
+    margin-top: 0px;
+    border: none;
+}
+
+.nav .dropdown .dropdown2 .caret {
+    background: url("../imagenes/comunes/lista-cabecera-gris-on.png") repeat scroll 0% 0% transparent;
+}
+
+.nav .dropdown .dropdown2.visto .caret {
+    background: url("../imagenes/comunes/lista-cabecera-azul-on.png") repeat scroll 0% 0% transparent;
+}
+
+.nav .caret {
+    display: none;
+}
+
+.nav .dropdown .dropdown2.visto .caret {
+    background: none
+}
+
+.subdropdown > li> a {
+    padding-left: 20px
+}
+
+.navbar-nav ul.subdropdown {
+    padding: 0px
+}
+
+.navbar-nav .dropdown-menu li:last-child {
+    border-bottom: none;
+}
+
+.dropdown-menu > li > a {
+    padding-left: 25px
+}
+
+.navbar-nav li.dropdown2 a {
+    padding: 15px 20px 0px 15px;
+}
+
+.navbar-left .open .dropdown-menu > li> a {
+    padding: 10px 20px 10px 15px;
+}
+
+.navbar-left .open .dropdown-menu > li> a:hover {
+    background: white
+}
+
+.navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    padding-top: 15px;
+    padding-bottom: 0px
+}
+
+.navbar-default .navbar-right .open .dropdown-menu > li > a {
+    padding-top: 15px;
+    padding-bottom: 15px
+}
+
+.navbar-default .ayuda-link.visto a,
+.navbar-default .ayuda-link.visto a:hover,
+.navbar-default .ayuda-link.visto a:focus {
+    color: white;
+}
+
+.navbar-default .navbar-left>.dropdown>.dropdown-menu {
+    padding: 20px 0px 20px 5px;
+}
+
+.navbar-nav .dropdown-menu > li >a,
+.navbar-nav .dropdown-menu > li.dropdown2 .subdropdown li>a {
+    background: transparent url("../imagenes/comunes/linea.png") 10px 0px !important;
+    background-repeat: repeat-y !important;
+    ;
+}
+
+.navbar-nav .dropdown-menu > li.visto >a,
+.navbar-nav .dropdown-menu > li.dropdown2 .subdropdown li.visto>a {
+    background: transparent url("../imagenes/comunes/linea_visto.png") 10px 0px !important;
+    background-repeat: repeat-y !important;
+}
+
+.navbar-nav .dropdown-menu > li >a .indice_icono {
+    width: 36px;
+    height: 36px;
+    display: block;
+    float: left;
+    text-align: center;
+    font-size: 22px;
+    line-height: 30px;
+    background: white;
+    border: 2px solid #cccccc;
+    border-radius: 20px;
+    color: #cccccc;
+    margin: -7px 0px 0px -5px;
+}
+
+.navbar-nav .dropdown-menu > li >a .indice_icono.glyphicon {
+    font-size: 20px;
+    padding: 1px 0px 0px 2px;
+}
+
+.navbar-nav .dropdown-menu > li.visto >a .indice_icono {
+    border: 2px solid #FFA332;
+    color: #FFA332;
+}
+
+.navbar-nav .dropdown-menu > li .subdropdown li>a .indice_icono {
+    width: 22px;
+    height: 22px;
+    display: block;
+    float: left;
+    background: white;
+    border: 2px solid #cccccc;
+    border-radius: 20px;
+    margin: 4px 0px 0px 2px;
+    font-size: 11px;
+    text-align: center;
+    padding: 3px 0px 0px 0px;
+    color: #CCC;
+}
+
+.navbar-nav .dropdown-menu > li .subdropdown li.visto>a .indice_icono {
+    border: 2px solid #FFA332;
+    color: #FFA332;
+}
+
+.navbar-default .navbar-left .open .dropdown-menu > li:first-child > a {
+    padding-top: 7px;
+}
+
+.navbar-default .navbar-left .open .dropdown-menu > li:last-child > a {
+    padding-bottom: 6px;
+}
+
+.navbar-default .navbar-left .ititulo {
+    display: block;
+    margin-left: 53px;
+    border-bottom: 1px solid #E6E6E6;
+    padding-bottom: 15px;
+}
+
+.navbar-default .navbar-left .dropdown>.dropdown-menu>li:last-child .ititulo {
+    border-bottom: none;
+    padding-bottom: 0px
+}
+
+.navbar-nav > li > a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.navbar-nav > li > .dropdown-menu li:hover {
+    background: transparent;
+}
+
+.navbar-nav .dropdown-menu > li.visto.dropdown2 a {
+    background: none
+}
+
+.navbar-nav .dropdown-menu > li.dropdown2 a {
+    background: none
+}
+
+.navbar-nav.navbar-right .dropdown-menu > li a {
+    background: none !important;
+}
+
+.navbar-nav.navbar-right {
+    margin: 0px -15px;
+}
+
+.navbar-default .navbar-nav > .dropdown >a {
+    width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+    .navbar-nav {
+        margin: 0px;
+    }
+    .navbar-default .navbar-right > .dropdown:first-child > a {
+        padding-right: 15px
+    }
+    .navbar-default .navbar-nav > .dropdown >a {
+        min-width: 140px;
+    }
+    .ico-recursos {
+        width: 38px;
+        height: 38px;
+        background: url("../imagenes/comunes/recursos.png") no-repeat;
+        display: inline-block;
+    }
+    .ico-indice {
+        width: 38px;
+        height: 38px;
+        background: url("../imagenes/comunes/indice.png") no-repeat;
+        display: inline-block;
+    }
+    .titulo-indice {
+        display: block;
+        float: right;
+        margin: 10px 0px 0px 15px;
+    }
+    .titulo-recursos {
+        display: block;
+        float: left;
+        margin: 10px 20px 0px 0px;
+    }
+}
+
+.boton-indice {
+    width: 140px;
+}
+
+
+/*IOS Server*/
+
+.ios .navbar {
+    margin-bottom: 0px;
+}
+
+
+/*Scroll fixes */
+
+.modal-open .modal {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    overflow-y: scroll;
+}
+
+
+/*Zindex problema con popovers*/
+
+.navbar-fixed-top {
+    z-index: 1065;
+}
+
+.navbar-default .ayuda-link.visto a:hover{color: white;}
+.navbar-default .ayuda-link.visto a:focus{color: white;}
+@media only screen and (max-width: 767px) {
+#menu-superior{background: white}
+.navbar-default .navbar-nav > .dropdown > a,.navbar-default .navbar-nav > .dropdown > a:focus,.navbar-default .ayuda-link.visto a,.navbar-default .ayuda-link.visto a:hover,.navbar-default .navbar-nav > .dropdown >a:hover,.navbar-default .navbar-nav > .dropdown >a:focus{color:#666666 }
+
+
+}
+
+.navbar-nav .dropdown-menu > li > a.especial-ultimo,.navbar-nav .dropdown-menu > li.dropdown2 .subdropdown li > a.especial-ultimo {background: transparent url("../imagenes/comunes/semi-linea.png") 10px 0px !important;background-repeat: no-repeat !important;}
+.navbar-nav .dropdown-menu > li.visto > a.especial-ultimo,.navbar-nav .dropdown-menu > li.dropdown2 .subdropdown li.visto > a.especial-ultimo {background: transparent url("../imagenes/comunes/semi-linea-visto.png") 10px 0px !important;background-repeat: no-repeat !important;}

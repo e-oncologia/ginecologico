@@ -1,0 +1,175 @@
+/*Interactivo*/
+
+.btn-interactivo {
+  background-color: #f2f2f2;
+  color: #333333;
+  font-size: 16px;
+}
+
+.btn-interactivo.boton_activo,
+.btn-interactivo:hover,
+.btn-interactivo:focus,
+.btn-interactivo:active,
+.btn-interactivo.active,
+.open .dropdown-toggle.btn-interactivo {
+  background-color: #56a51d;
+  color: white;
+  transition: 0.5s;
+}
+.botones-caja .botones-caja-caja {
+  background-color: #f2f2f2;
+}
+
+/*Actividad*/
+
+.btn-actividad {
+  font-family: OpenSans-Semibold;
+  font-weight: 100;
+  padding: 8px 25px;
+  font-size: 17px;
+  color: #ffffff;
+  background-color: #333333;
+  border-color: #333333;
+  border-width: 2px;
+}
+
+.btn-actividad:hover,
+.btn-actividad:focus,
+.btn-actividad:active,
+.btn-actividad.active,
+.open .dropdown-toggle.btn-actividad {
+  color: #333333;
+  background-color: transparent;
+  border-color: #333333;
+  border-width: 2px;
+}
+
+.btn-actividad:active,
+.btn-actividad.active,
+.open .dropdown-toggle.btn-actividad {
+  background-image: none;
+}
+
+.btn-actividad.disabled,
+.btn-actividad[disabled],
+fieldset[disabled] .btn-actividad,
+.btn-actividad.disabled:hover,
+.btn-actividad[disabled]:hover,
+fieldset[disabled] .btn-actividad:hover,
+.btn-actividad.disabled:focus,
+.btn-actividad[disabled]:focus,
+fieldset[disabled] .btn-actividad:focus,
+.btn-actividad.disabled:active,
+.btn-actividad[disabled]:active,
+fieldset[disabled] .btn-actividad:active,
+.btn-actividad.disabled.active,
+.btn-actividad[disabled].active,
+fieldset[disabled] .btn-actividad.active {
+  background-color: #4d4d4d;
+  border-color: #4d4d4d;
+}
+
+.btn-actividad .badge {
+  color: #1a1a1a;
+  background-color: #ffffff;
+}
+
+/*Transcripción*/
+
+.btn-azul-oscuro {
+  padding: 5px 7px;
+  font-size: 14px;
+  color: #ffffff;
+  background-color: #56a51d;
+  border-color: #56a51d;
+}
+
+.btn-azul-oscuro:hover,
+.btn-azul-oscuro:focus,
+.btn-azul-oscuro:active,
+.btn-azul-oscuro.active,
+.open .dropdown-toggle.btn-azul-oscuro {
+  color: #ffffff;
+  background-color: #56a51d;
+  border-color: #56a51d;
+}
+
+.btn-azul-oscuro:active,
+.btn-azul-oscuro.active,
+.open .dropdown-toggle.btn-azul-oscuro {
+  background-image: none;
+}
+
+.btn-azul-oscuro.disabled,
+.btn-azul-oscuro[disabled],
+fieldset[disabled] .btn-azul-oscuro,
+.btn-azul-oscuro.disabled:hover,
+.btn-azul-oscuro[disabled]:hover,
+fieldset[disabled] .btn-azul-oscuro:hover,
+.btn-azul-oscuro.disabled:focus,
+.btn-azul-oscuro[disabled]:focus,
+fieldset[disabled] .btn-azul-oscuro:focus,
+.btn-azul-oscuro.disabled:active,
+.btn-azul-oscuro[disabled]:active,
+fieldset[disabled] .btn-azul-oscuro:active,
+.btn-azul-oscuro.disabled.active,
+.btn-azul-oscuro[disabled].active,
+fieldset[disabled] .btn-azul-oscuro.active {
+  background-color: #2d3454;
+  border-color: #2d3454;
+}
+
+.btn-azul-oscuro .badge {
+  color: #1a1a1a;
+  background-color: #ffffff;
+}
+
+/*Boton descarga gris*/
+
+.btn-descarga-gris {
+  text-align: left;
+  min-width: 150px;
+  color: #000000;
+  background-color: #d3ccc2;
+  border-color: #d3ccc2;
+}
+
+.btn-descarga-gris:hover,
+.btn-descarga-gris:focus,
+.btn-descarga-gris:active,
+.btn-descarga-gris.active,
+.open .dropdown-toggle.btn-descarga-gris {
+  color: #000000;
+  background-color: #c4bcb0;
+  border-color: #d3ccc2;
+}
+
+.btn-descarga-gris:active,
+.btn-descarga-gris.active,
+.open .dropdown-toggle.btn-descarga-gris {
+  background-image: none;
+}
+
+.btn-descarga-gris.disabled,
+.btn-descarga-gris[disabled],
+fieldset[disabled] .btn-descarga-gris,
+.btn-descarga-gris.disabled:hover,
+.btn-descarga-gris[disabled]:hover,
+fieldset[disabled] .btn-descarga-gris:hover,
+.btn-descarga-gris.disabled:focus,
+.btn-descarga-gris[disabled]:focus,
+fieldset[disabled] .btn-descarga-gris:focus,
+.btn-descarga-gris.disabled:active,
+.btn-descarga-gris[disabled]:active,
+fieldset[disabled] .btn-descarga-gris:active,
+.btn-descarga-gris.disabled.active,
+.btn-descarga-gris[disabled].active,
+fieldset[disabled] .btn-descarga-gris.active {
+  background-color: #d3ccc2;
+  border-color: #d3ccc2;
+}
+
+.btn-descarga-gris .badge {
+  color: #d3ccc2;
+  background-color: #000000;
+}

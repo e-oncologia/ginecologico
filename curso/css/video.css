@@ -1,0 +1,566 @@
+/*Estilos player*/
+.videocontent {
+  margin: 0 auto;
+  width: 100%;
+  position: relative;
+  padding-bottom: 55px;
+}
+.vjs-control-bar {
+  z-index: 20;
+}
+.vjs-live-controls {
+  display: none;
+}
+
+/*Botón play*/
+
+.vjs-default-skin .vjs-big-play-button:before {
+  content: "";
+}
+.vjs-default-skin .vjs-big-play-button {
+  width: 56px;
+  height: 50px;
+  background: url("../librerias/videojs/imagenes/pequenas/play_peque.png");
+}
+.vjs-default-skin:hover .vjs-big-play-button,
+.vjs-default-skin .vjs-big-play-button,
+.vjs-default-skin .vjs-big-play-button:focus {
+  border: none;
+  box-shadow: none;
+}
+.vjs-default-skin:hover .vjs-big-play-button,
+.vjs-default-skin .vjs-big-play-button:focus {
+  width: 56px;
+  height: 50px;
+  background: url("../librerias/videojs/imagenes/pequenas/play2_peque.png");
+}
+.vjs-default-skin.vjs-big-play-centered .vjs-big-play-button {
+  /*top:90%;*/
+  margin-left: -28px;
+  margin-top: -12px;
+}
+.vjs-default-skin .vjs-big-play-button {
+  transition: all 0s;
+}
+
+@media (min-width: 400px) {
+  .vjs-default-skin.vjs-big-play-centered .vjs-big-play-button {
+    /*top: 90%;*/
+  }
+}
+@media (min-width: 600px) {
+  .vjs-default-skin.vjs-big-play-centered .vjs-big-play-button {
+    /*top: 75%;*/
+    margin-left: -54px;
+  }
+  .vjs-default-skin .vjs-big-play-button {
+    margin-top: -54px;
+    width: 107px;
+    height: 107px;
+    background: url("../librerias/videojs/imagenes/play.png");
+  }
+  .vjs-default-skin:hover .vjs-big-play-button,
+  .vjs-default-skin .vjs-big-play-button:focus {
+    width: 107px;
+    height: 107px;
+    background: url("../librerias/videojs/imagenes/play2.png");
+  }
+}
+
+.vjs-default-skin .vjs-control-bar {
+  height: 55px;
+  padding: 10px 0;
+}
+.vjs-default-skin .vjs-play-progress,
+.vjs-default-skin .vjs-volume-level {
+  background: #56a51d;
+}
+.vjs-default-skin .vjs-control-bar {
+  background: rgba(40, 40, 40, 1);
+}
+.vjs-default-skin .vjs-load-progress,
+.vjs-default-skin .vjs-slider {
+  background: #4d4d4d;
+}
+.vjs-default-skin .vjs-progress-control,
+.vjs-default-skin .vjs-volume-bar {
+  height: 5px;
+}
+.vjs-default-skin .vjs-progress-control {
+  top: -1px;
+}
+.vjs-default-skin:hover .vjs-progress-control {
+  font-size: 0.3em;
+}
+
+/*Eliminar shadows*/
+.vjs-default-skin .vjs-slider:focus,
+.vjs-default-skin .vjs-control:focus:before,
+.vjs-default-skin .vjs-control:hover:before,
+.vjs-default-skin:hover .vjs-big-play-button,
+.vjs-default-skin .vjs-big-play-button:focus,
+.vjs-default-skin .vjs-menu-button ul li:focus,
+.vjs-default-skin .vjs-menu-button ul li:hover,
+.vjs-default-skin .vjs-menu-button ul li.vjs-selected:focus,
+.vjs-default-skin .vjs-menu-button ul li.vjs-selected:hover,
+.vjs-default-skin .vjs-captions-button:focus .vjs-control-content:before,
+.vjs-default-skin .vjs-captions-button:hover .vjs-control-content:before {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  text-shadow: none;
+}
+
+/*Eliminar contents*/
+.vjs-default-skin .vjs-slider-handle:before,
+.vjs-default-skin .vjs-mute-control:before,
+.vjs-default-skin .vjs-volume-menu-button:before,
+.vjs-default-skin .vjs-mute-control.vjs-vol-2:before,
+.vjs-default-skin .vjs-volume-menu-button.vjs-vol-2:before,
+.vjs-default-skin .vjs-mute-control.vjs-vol-0:before,
+.vjs-default-skin .vjs-volume-menu-button.vjs-vol-0:before,
+.vjs-default-skin .vjs-mute-control.vjs-vol-1:before,
+.vjs-default-skin .vjs-volume-menu-button.vjs-vol-1:before,
+.vjs-default-skin .vjs-mute-control:before,
+.vjs-default-skin .vjs-volume-menu-button:before,
+.vjs-default-skin.vjs-fullscreen .vjs-fullscreen-control:before,
+.vjs-default-skin .vjs-fullscreen-control:before,
+.vjs-default-skin .vjs-slider-handle:before,
+.vjs-default-skin.vjs-playing .vjs-play-control:before,
+.vjs-default-skin .vjs-play-control:before {
+  content: "";
+}
+.vjs-default-skin.vjs-playing .vjs-play-control,
+.vjs-default-skin.vjs-paused .vjs-play-control {
+  border-right: 1px solid #4d4d4d;
+  width: 70px;
+  height: 35px;
+  margin-right: 25px;
+  margin-left: 10px;
+}
+.vjs-default-skin.vjs-paused .vjs-play-control .vjs-control-content {
+  background: url(../librerias/videojs/imagenes/play_b.png);
+  background-repeat: no-repeat;
+  height: 20px;
+  width: 20px;
+  margin: 10px 0px 0px 20px;
+}
+.vjs-default-skin.vjs-paused .vjs-play-control:hover .vjs-control-content {
+  background: url(../librerias/videojs/imagenes/play_a.png);
+  background-repeat: no-repeat;
+  height: 20px;
+  width: 20px;
+  margin: 10px 0px 0px 20px;
+}
+.vjs-default-skin .vjs-play-control.vjs-paused .vjs-control-content {
+  background: url(../librerias/videojs/imagenes/play_b.png);
+  background-repeat: no-repeat;
+  height: 20px;
+  width: 20px;
+  margin: 10px 0px 0px 20px;
+}
+.vjs-default-skin .vjs-play-control.vjs-paused:hover .vjs-control-content {
+  background: url(../librerias/videojs/imagenes/play_a.png);
+  background-repeat: no-repeat;
+  height: 20px;
+  width: 20px;
+  margin: 10px 0px 0px 20px;
+}
+.vjs-default-skin .vjs-play-control.vjs-playing .vjs-control-content {
+  background: url(../librerias/videojs/imagenes/pause_b.png);
+  background-repeat: no-repeat;
+  height: 20px;
+  width: 20px;
+  margin: 10px 0px 0px 20px;
+}
+.vjs-default-skin .vjs-play-control.vjs-playing:hover .vjs-control-content {
+  background: url(../librerias/videojs/imagenes/pause_a.png);
+  background-repeat: no-repeat;
+  height: 20px;
+  width: 20px;
+  margin: 10px 0px 0px 20px;
+}
+
+/*Volumen*/
+.vjs-default-skin .vjs-volume-control {
+  width: 80px;
+  margin-top: 5px;
+}
+.vjs-default-skin .vjs-volume-bar {
+  width: 80px;
+}
+.vjs-default-skin .vjs-mute-control {
+  width: 50px;
+  height: 35px;
+}
+.vjs-default-skin .vjs-mute-control div {
+  background: url(../librerias/videojs/imagenes/vol_b.png);
+  background-repeat: no-repeat;
+  height: 22px;
+  width: 22px;
+  margin: 7px 0px 0px 13px;
+}
+.vjs-default-skin .vjs-mute-control:hover div {
+  background: url(../librerias/videojs/imagenes/vol_a.png);
+  background-repeat: no-repeat;
+  height: 22px;
+  width: 22px;
+  margin: 7px 0px 0px 13px;
+}
+.vjs-default-skin .vjs-mute-control.vjs-vol-0 div {
+  background: url(../librerias/videojs/imagenes/vol_b_mute.png);
+}
+.vjs-default-skin .vjs-mute-control.vjs-vol-0:hover div {
+  background: url(../librerias/videojs/imagenes/vol_a_mute.png);
+}
+.vjs-default-skin .vjs-mute-control.vjs-vol-1 div {
+  background: url(../librerias/videojs/imagenes/vol_b_medio.png);
+}
+.vjs-default-skin .vjs-mute-control.vjs-vol-1:hover div {
+  background: url(../librerias/videojs/imagenes/vol_a_medio.png);
+}
+
+/*Barra carga*/
+.vjs-default-skin .vjs-load-progress {
+  background-color: grey;
+}
+
+/*Bola*/
+.vjs-default-skin .vjs-seek-handle {
+  width: 12px;
+  height: 12px;
+  background: url(../librerias/videojs/imagenes/bola.png);
+  background-repeat: no-repeat;
+  margin-top: -3px;
+}
+.vjs-default-skin .vjs-volume-bar .vjs-volume-handle {
+  width: 12px;
+  height: 12px;
+  background: url(../librerias/videojs/imagenes/bola.png);
+  background-repeat: no-repeat;
+  margin-top: -3px;
+  left: 90%;
+}
+
+/*Full screen*/
+.vjs-default-skin .vjs-fullscreen-control {
+  border-left: 1px solid #4d4d4d;
+  width: 70px;
+  height: 35px;
+  margin-left: 25px;
+  margin-right: 10px;
+}
+.vjs-default-skin .vjs-fullscreen-control .vjs-control-content {
+  background: url(../librerias/videojs/imagenes/full_b.png);
+  background-repeat: no-repeat;
+  height: 30px;
+  width: 30px;
+  margin: 5px 0px 0px 25px;
+}
+.vjs-default-skin .vjs-fullscreen-control:hover .vjs-control-content {
+  background: url(../librerias/videojs/imagenes/full_a.png);
+  background-repeat: no-repeat;
+  height: 30px;
+  width: 30px;
+  margin: 5px 0px 0px 25px;
+}
+
+/*Subtitulos*/
+.vjs-default-skin .vjs-subtitles-button {
+  background: url(../librerias/videojs/imagenes/subt_a.png);
+  background-repeat: no-repeat;
+  height: 30px;
+  width: 40px;
+  margin: 5px 0px 0px 0px;
+}
+.vjs-default-skin .vjs-subtitles-button:before {
+  content: none;
+}
+.vjs-default-skin .vjs-subtitles-button:hover {
+  background: url(../librerias/videojs/imagenes/subt_b.png);
+  background-repeat: no-repeat;
+}
+.video-js .vjs-text-track-display {
+  bottom: 1em !important;
+}
+.video-js .vjs-text-track {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.video-js .vjs-text-track-display {
+  font-size: 1.5em;
+}
+.video-js.vjs-fullscreen .vjs-text-track-display {
+  bottom: 3em !important;
+  font-size: 1.5em;
+}
+
+/*Tiempos*/
+.vjs-current-time-display,
+.vjs-duration-display {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 13px;
+}
+.vjs-duration-display,
+.vjs-time-divider {
+  color: #666666;
+  margin-left: 3px;
+}
+.vjs-current-time-display,
+.vjs-duration-display,
+.vjs-time-divider {
+  margin-top: 5px;
+}
+
+/*Estilos botón AD*/
+#botones_ad,
+#botones_ad2 {
+  width: 86px;
+  height: 52px;
+  position: absolute;
+  top: 1%;
+  right: 1%;
+  z-index: 10;
+}
+#botones_ad button,
+#botones_ad2 button {
+  width: 100%;
+  height: 100%;
+  border: 0px;
+}
+#botones_ad .video-audio {
+  background: url(../imagenes/boton_off.png) no-repeat;
+}
+#botones_ad2 .video-visual {
+  background: url(../imagenes/boton_on.png) no-repeat;
+}
+
+@media (max-width: 500px) {
+  .videocontent {
+    padding-bottom: 40px;
+  }
+  .vjs-default-skin .vjs-control-bar {
+    height: 40px;
+    padding: 5px 1px;
+  }
+
+  .vjs-default-skin.vjs-playing .vjs-play-control,
+  .vjs-default-skin.vjs-paused .vjs-play-control {
+    border-right: 1px solid #4d4d4d;
+    width: 25px;
+    height: 30px;
+    margin-right: 5px;
+    margin-left: 10px;
+  }
+  .vjs-default-skin .vjs-play-control.vjs-paused .vjs-control-content {
+    background: url(../librerias/videojs/imagenes/pequenas/play_b.png);
+    background-repeat: no-repeat;
+    height: 20px;
+    width: 20px;
+    margin: 10px 0px 0px 0px;
+  }
+  .vjs-default-skin.vjs-paused .vjs-play-control .vjs-control-content {
+    background: url(../librerias/videojs/imagenes/pequenas/play_b.png);
+    background-repeat: no-repeat;
+    height: 20px;
+    width: 20px;
+    margin: 10px 0px 0px 0px;
+  }
+  .vjs-default-skin.vjs-paused .vjs-play-control:hover .vjs-control-content {
+    background: url(../librerias/videojs/imagenes/pequenas/play_a.png);
+    background-repeat: no-repeat;
+    height: 20px;
+    width: 20px;
+    margin: 10px 0px 0px 0px;
+  }
+
+  .vjs-default-skin .vjs-play-control.vjs-paused:hover .vjs-control-content {
+    background: url(../librerias/videojs/imagenes/pequenas/play_a.png);
+    background-repeat: no-repeat;
+    height: 20px;
+    width: 20px;
+    margin: 10px 0px 0px 0px;
+  }
+  .vjs-default-skin .vjs-play-control.vjs-playing .vjs-control-content {
+    background: url(../librerias/videojs/imagenes/pequenas/pause_b.png);
+    background-repeat: no-repeat;
+    height: 20px;
+    width: 20px;
+    margin: 10px 0px 0px 0px;
+  }
+  .vjs-default-skin .vjs-play-control.vjs-playing:hover .vjs-control-content {
+    background: url(../librerias/videojs/imagenes/pequenas/pause_a.png);
+    background-repeat: no-repeat;
+    height: 20px;
+    width: 20px;
+    margin: 10px 0px 0px 0px;
+  }
+
+  /*Volumen*/
+  .vjs-default-skin .vjs-volume-control {
+    width: 50px;
+    margin-top: 3px;
+  }
+  .vjs-default-skin .vjs-volume-bar {
+    width: 50px;
+  }
+  .vjs-default-skin .vjs-mute-control {
+    width: 20px;
+    height: 30px;
+  }
+
+  .vjs-default-skin .vjs-mute-control div {
+    background: url(../librerias/videojs/imagenes/pequenas/vol_b.png);
+    background-repeat: no-repeat;
+    height: 15px;
+    width: 15px;
+    margin: 10px 0px 0px 0px;
+  }
+  .vjs-default-skin .vjs-mute-control:hover div {
+    background: url(../librerias/videojs/imagenes/pequenas/vol_a.png);
+    background-repeat: no-repeat;
+    height: 15px;
+    width: 15px;
+    margin: 10px 0px 0px 0px;
+  }
+
+  .vjs-default-skin .vjs-mute-control.vjs-vol-0 div {
+    background: url(../librerias/videojs/imagenes/pequenas/vol_b_mute.png);
+  }
+  .vjs-default-skin .vjs-mute-control.vjs-vol-0:hover div {
+    background: url(../librerias/videojs/imagenes/pequenas/vol_a_mute.png);
+  }
+
+  .vjs-default-skin .vjs-mute-control.vjs-vol-1 div {
+    background: url(../librerias/videojs/imagenes/pequenas/vol_b_medio.png);
+  }
+  .vjs-default-skin .vjs-mute-control.vjs-vol-2:hover div {
+    background: url(../librerias/videojs/imagenes/pequenas/vol_a_medio.png);
+  }
+
+  /*Full screen*/
+  .vjs-default-skin .vjs-fullscreen-control {
+    border-left: 1px solid #4d4d4d;
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 2px;
+  }
+  .vjs-default-skin .vjs-fullscreen-control .vjs-control-content {
+    background: url(../librerias/videojs/imagenes/pequenas/full_b.png);
+    background-repeat: no-repeat;
+    height: 30px;
+    width: 30px;
+    margin: 5px 0px 0px 10px;
+  }
+  .vjs-default-skin .vjs-fullscreen-control:hover .vjs-control-content {
+    background: url(../librerias/videojs/imagenes/pequenas/full_a.png);
+    background-repeat: no-repeat;
+    height: 30px;
+    width: 30px;
+    margin: 5px 0px 0px 10px;
+  }
+
+  /*Tiempos*/
+  .vjs-current-time-display,
+  .vjs-duration-display {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 13px;
+  }
+  .vjs-duration-display,
+  .vjs-time-divider {
+    color: #666666;
+    margin-left: 3px;
+  }
+  .vjs-current-time-display,
+  .vjs-duration-display,
+  .vjs-time-divider {
+    margin-top: 2px;
+  }
+
+  .vjs-default-skin .vjs-subtitles-button {
+    background: url(../librerias/videojs/imagenes/pequenas/subt_a.png);
+    background-repeat: no-repeat;
+    margin: 10px 0px 0px 0px;
+  }
+  .vjs-default-skin .vjs-subtitles-button:before {
+    content: none;
+  }
+  .vjs-default-skin .vjs-subtitles-button:hover {
+    background: url(../librerias/videojs/imagenes/pequenas/subt_b.png);
+    background-repeat: no-repeat;
+  }
+
+  /*Estilos botón AD*/
+  #botones_ad,
+  #botones_ad2 {
+    width: 50px;
+    height: 32px;
+    position: absolute;
+    top: 1%;
+    right: 1%;
+    z-index: 10;
+  }
+  #botones_ad button,
+  #botones_ad2 button {
+    width: 100%;
+    height: 100%;
+    border: 0px;
+  }
+  #botones_ad .video-audio {
+    background: url(../imagenes/boton_off_peque.png) no-repeat;
+  }
+  #botones_ad2 .video-visual {
+    background: url(../imagenes/boton_on_peque.png) no-repeat;
+  }
+
+  /*Subtitulos*/
+  .video-js .vjs-text-track-display {
+    font-size: 1em;
+  }
+}
+
+/*Estilos para mostrar siempre la barra del player*/
+.vjs-control-bar {
+  bottom: -55px !important;
+  display: block !important;
+}
+.vjs-fullscreen .vjs-control-bar {
+  bottom: 0px !important;
+}
+.vjs-default-skin.vjs-has-started.vjs-user-inactive.vjs-playing
+  .vjs-control-bar {
+  display: block;
+  visibility: visible;
+  opacity: 1;
+  -webkit-transition: visibility 0s, opacity 0s;
+  -moz-transition: visibility 0s, opacity 0s;
+  -o-transition: visibility 0s, opacity 0s;
+  transition: visibility 0s, opacity 0s;
+}
+.vjs-default-skin.vjs-has-started.vjs-user-inactive.vjs-playing.vjs-fullscreen
+  .vjs-control-bar {
+  display: block;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: visibility 1s, opacity 1s;
+  -moz-transition: visibility 1s, opacity 1s;
+  -o-transition: visibility 1s, opacity 1s;
+  transition: visibility 1s, opacity 1s;
+}
+
+@media (max-width: 500px) {
+  .vjs-control-bar {
+    bottom: -40px !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .video-js .vjs-text-track-display {
+    font-size: 2em;
+  }
+}
+
+.vjs-poster {
+  background-size: cover;
+}
