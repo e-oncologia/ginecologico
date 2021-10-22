@@ -140,11 +140,7 @@ header {
 /*Pagina Clave*/
 .pagina-clave {
   background: rgb(43, 167, 168);
-  background: linear-gradient(
-    90deg,
-    rgba(43, 167, 168, 1) 0%,
-    rgba(55, 162, 163, 1) 100%
-  );
+
   color: white;
   font-size: 16px;
   font-weight: 400;
@@ -594,11 +590,6 @@ table.tabla-vertical tbody tr > th {
 /*Flip*/
 .flips .opcionFlip {
   background: rgb(86, 165, 29);
-  background: linear-gradient(
-    90deg,
-    rgba(86, 165, 29, 1) 35%,
-    rgba(110, 194, 50, 1) 100%
-  );
 }
 .flips .opcion_bloque p,
 .flips .opcion_bloque h6,
@@ -609,12 +600,6 @@ table.tabla-vertical tbody tr > th {
   color: white;
 }
 
-.flips .opcionFlip:hover {
-  box-shadow: inset 0px 0px 20px 10px #63af2c;
-  -webkit-box-shadow: inset 0px 0px 20px 10px #63af2c;
-  -moz-box-shadow: inset 0px 0px 20px 10px #63af2c;
-  transition: 0.5s;
-}
 .flips .opcionDescription {
   background: #f2f2f2;
 }
