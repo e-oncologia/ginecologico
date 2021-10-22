@@ -139,7 +139,12 @@ header {
 
 /*Pagina Clave*/
 .pagina-clave {
-  background: #ffa332;
+  background: rgb(43, 167, 168);
+  background: linear-gradient(
+    90deg,
+    rgba(43, 167, 168, 1) 0%,
+    rgba(55, 162, 163, 1) 100%
+  );
   color: white;
   font-size: 16px;
   font-weight: 400;
@@ -618,7 +623,7 @@ table.tabla-vertical tbody tr > th {
   background: white;
 }
 .modal h3 {
-  color: #ffa332;
+  color: #2ba7a8;
   font-size: 24px;
   font-family: OpenSans-Regular;
   font-weight: 100;
@@ -676,7 +681,7 @@ table.tabla-vertical tbody tr > th {
 
 /*Modal ayuda*/
 .modal ul {
-  color: #ffa332;
+  color: #2ba7a8;
   font-weight: 400;
   font-size: 16px;
 }

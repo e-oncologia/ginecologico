@@ -142,11 +142,11 @@
 /*Colores con elemento visto*/
 
 .navbar-default .navbar-nav .open .dropdown-menu > li.visto > a {
-    color: #FFA332;
+    color: #2ba7a8;
 }
 
 .subdropdown > li.visto > a {
-    color: #FFA332;
+    color: #2ba7a8;
 }
 
 
@@ -155,7 +155,7 @@
 .navbar-default .navbar-nav.navbar-right .open .dropdown-menu > li > a,
 .navbar-default .navbar-nav.navbar-right .open .dropdown-menu > li > a:focus,
 .navbar-default .navbar-nav.navbar-right .open .dropdown-menu > li > a:hover {
-    color: #FFA332;
+    color: #2ba7a8;
 }
 
 
@@ -283,8 +283,8 @@
 }
 
 .navbar-nav .dropdown-menu > li.visto >a .indice_icono {
-    border: 2px solid #FFA332;
-    color: #FFA332;
+    border: 2px solid #2ba7a8;
+    color: #2ba7a8;
 }
 
 .navbar-nav .dropdown-menu > li .subdropdown li>a .indice_icono {
@@ -303,8 +303,8 @@
 }
 
 .navbar-nav .dropdown-menu > li .subdropdown li.visto>a .indice_icono {
-    border: 2px solid #FFA332;
-    color: #FFA332;
+    border: 2px solid #2ba7a8;
+    color: #2ba7a8;
 }
 
 .navbar-default .navbar-left .open .dropdown-menu > li:first-child > a {
