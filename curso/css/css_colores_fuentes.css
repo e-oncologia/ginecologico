@@ -932,3 +932,6 @@ table.tabla-vertical tbody tr > th {
   margin-top: 5px;
   text-align: left;
 }
+.multiply {
+  mix-blend-mode: multiply;
+}
